@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="formindex.php" method="post" enctype="multipart/form-data">
+        <form action="index.php" method="post" enctype="multipart/form-data">
             <h1>sign up</h1>
             <label>first name:<input placeholder="first name" type="text" name="name" /></label>
             <label>last name:<input placeholder="last name" type="text" name="lname" /></label>

@@ -1,0 +1,32 @@
+:root{
+    --main-backcolor: #edede9;
+    --main-font-color: #d6ccc2;
+    --main-text-color: #fff;
+    --main-font-hover: #f5ebe0;
+    --main-font-hover-color: #e3d5ca;
+    --main-header-color: #d5bdaf;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    background-color: var(--main-backcolor);
+    color: var(--main-text-color);
+}
+header{
+    background-color: var(--main-header-color);
+}
+.cricle{
+background: var(--main-text-color);
+height: 2rem;
+width: 2rem;
+border-radius: 50%;
+overflow: hidden;
+}
+.cricle img{
+    height: 100%;
+    width: 100%;
+}
