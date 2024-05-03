@@ -12,9 +12,11 @@
     box-sizing: border-box;
     text-transform: capitalize;
 }
+
 body{
     background-color: var(--main-backcolor);
     color: var(--main-text-color);
+    overflow-x: hidden;
 }
 header{
     background-color: var(--main-header-color);
@@ -29,4 +31,43 @@ overflow: hidden;
 .cricle img{
     height: 100%;
     width: 100%;
+}
+.boxs,.imgcard{
+    height: 15rem;
+    width: 25rem;
+    border-radius: .6rem;
+    background-color: var(--main-text-color);
+    overflow: hidden;
+    text-align: center;
+    color: var(--main-font-hover);
+}
+.boxs img{
+    height: 100%;
+    width: 100%;
+    color: #000;
+    transition: 1s !important;
+}
+.imgcard:hover .boxs img{
+    transform: scale(1.1);
+}
+.imgcard h1 , .shop_link{
+    transition: 1s !important;
+    transform: translateY(-2.4rem);
+}
+.imgcard:hover h1{
+    transform: translateY(-5rem);
+}
+.imgcard:hover .shop_link{
+    transform: translateY(-5rem) !important;
+
+}
+.shop_red{
+    border-bottom: 4px solid transparent;
+}
+.shop_red:hover{
+    border-bottom: 4px solid #f41515;
+    color:#f41515 !important;
+}
+.shop_red:hover a{
+    color:rgb(243, 68, 68) !important;
 }

@@ -15,7 +15,7 @@
             <label>enter email:<input placeholder="email" type="email" name="email" /></label>
             <label>phone number:<input placeholder="phone number" type="number" name="num" /></label>
             <label>profile img:<input type="file" name="profile" /></label>
-            <button name="sub">submit</button>
+            <input type="submit" name="sub" value="submit">
         </form>
     </div>
 </body>

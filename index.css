@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     list-style: none;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -62,7 +62,7 @@ button{
     border:3px solid var(--prim-color);
     font-weight: 900;
     font-size: .8rem;
-}
+    }
 
 button:hover{
     background: var(--danger-color);
