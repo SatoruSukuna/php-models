@@ -96,48 +96,31 @@ overflow: hidden;
     z-index: 9999;
 }
 
-.loading{
-    border-radius: 50%;
-    animation: loader 3s linear infinite;
-    transition: 1s;
-}
-@keyframes loader {
-    0%{
-        border-top: 2px solid red;
-        border-bottom: 2px solid transparent;
-        border-left: 2px solid transparent;
-        border-right: 2px solid transparent;
-    }
-    25%{
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid transparent;
-        border-left: 2px solid transparent;
-        border-right: 2px solid red;
-    }
-    50%{
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid red;
-        border-left: 2px solid transparent;
-        border-right: 2px solid transparent;
-    }
-    75%{
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid transparent;
-        border-left: 2px solid red;
-        border-right: 2px solid transparent;
-    }
-    100%{
-        border-top: 2px solid red;
-        border-bottom: 2px solid transparent;
-        border-left: 2px solid transparent;
-        border-right: 2px solid transparent;
-    }
-}
-
 .load i{
+    transition: 1s;
+    animation: loader 3s linear infinite;
     padding: 1rem 1rem;
     border-radius: 50%;
     font-size: 4rem;
     background-color: #fff;
     box-shadow: 2px 1px 15px #d5bdaf;
+    transform: scale(0.9);
 }
+    @keyframes loader {
+        0%{
+            transform: scale(0.9);
+        }
+        25%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+        75%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1.3);
+    
+        }
+    }

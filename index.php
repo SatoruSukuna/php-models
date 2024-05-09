@@ -47,8 +47,6 @@ if(isset($_POST['sub'])){
     <title>shoping</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="mainindex.css">
@@ -56,8 +54,8 @@ if(isset($_POST['sub'])){
 <body class="fst-italic">
   <div class="load" onload="load()">
       <div class="loading">
-  <i class='bx bx-store' style='color:#f13e3e' ></i>
-      </div>
+        </div>
+        <i class='bx bx-store' style='color:#f13e3e' ></i>
   </div>
     <header class="container-fluid pt-2 pb-2">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,6 +64,7 @@ if(isset($_POST['sub'])){
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -83,11 +82,11 @@ if(isset($_POST['sub'])){
         </li>
       </ul>
       <div class="d-flex gap-1">
-    <h4 class="text-black fw-light">hi,<?php echo $name ?></h4>
-    <div class="cricle">
+     <h4 class="text-black fw-light">hi,<?php echo $name ?></h4>
+          <div class="cricle">
     <img src="upload/<?php echo $profile ?>" alt="" srcset="">
-    </div>
-</div>
+          </div>
+       </div>
     </div>
   </div>
 </nav>
@@ -171,51 +170,61 @@ if(isset($_POST['sub'])){
       </div>
       
     </div>
-<div class="owl-carousel  container-fluid" data-aos="fade-up"     data-aos-anchor-placement="top-bottom">
-  <div class="text-black">
-    <div class="imgowl">
-        <img src="imgset/women 5.jpg" alt="loading...">   
-      </div> 
-      <h1 class="fs-6 fw-lighter text-center">cashmere Tank + bag</h1> 
-      <p class="fs-5 text-center fw-lighter fst-normal">$98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-   </div>
-  <div class="text-black">
-     <div class="imgowl">
-          <img src="imgset/latest.webp" alt="loading...">    
-      </div>
-      <h1 class="fs-6 fw-lighter text-center">cashmere Tank + bag</h1>
-      <p class="fs-5 text-center fw-lighter fst-normal">$98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-   </div>
-  <div class="text-black"> 
-    <div class="imgowl">
-         <img src="imgset/latest1.webp" alt="loading...">  
-    </div>
-    <h1 class="fs-6 fw-lighter text-center">cashmere Tank + bag</h1>
-    <p class="fs-5 text-center fw-lighter fst-normal">$98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-   </div>
- <div class="text-black"> 
-  <div class="imgowl">
-      <img src="imgset/women 5.jpg" alt="loading...">    
-  </div>
-  <h1 class="fs-6 fw-lighter text-center">cashmere Tank + bag</h1>
-  <p class="fs-5 text-center fw-lighter fst-normal">$98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-  </div>
-  <div class="text-black">
-    <div class="imgowl">
-       <img src="imgset/latest.webp" alt="loading...">    
-     </div>
-     <h1 class="fs-6 fw-lighter text-center">cashmere Tank + bag</h1>
-     <p class="fs-5 text-center fw-lighter fst-normal">$98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-  </div>
-  <div class="text-black"> 
-    <div class="imgowl">
-      <img src="imgset/latest1.webp" alt="loading...">  
-    </div>
-    <h1 class="fs-6 fw-lighter text-center">cashmere Tank + bag</h1>
-    <p class="fs-5 text-center fw-lighter fst-normal">$98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-  </div>
-</div>
 
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up"     data-aos-anchor-placement="top-bottom">
+    <div class="carousel-inner mt-4">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center gap-5">
+         <?php 
+         $run=0;
+         $imges=["latest.webp","latest1.webp","women 2.jpg","women 4.jpg","women 5.jpg","men.webp"];
+         while ($run<=4){
+         ?>
+          <div class="card" style="width: 18rem;">
+            <img src="imgset/<?php echo $imges[$run]?>" class="card-img-top" style="height: 100%; width: 100%;" alt="...">
+            <div class="card-body">
+            <h1 class="fs-6 fw-lighter text-center card-title">cashmere Tank + bag</h1>
+              <p class="fs-5 text-center fw-lighter fst-normal card-text"><span class="fs-6" style="color:#dcc5ae;">price:</span> $98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
+            </div>
+          </div>
+          <?php
+          $run++;
+         }
+          ?>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center gap-5">
+          <?php 
+         $imges=["latest.webp","latest1.webp","women 2.jpg","women 4.jpg","women 5.jpg","men.webp"];
+         $run=0;
+         while ($run<=4){
+         ?>
+          <div class="card" style="width: 18rem;">
+          <img src="imgset/<?php echo $imges[$run]?>" class="card-img-top" style="height: 100%; width: 100%;" alt="...">
+            <div class="card-body">
+              <h1 class="fs-6 fw-lighter text-center card-title">cashmere Tank + bag</h1>
+              <p class="fs-5 text-center fw-lighter fst-normal card-text"><span class="fs-6" style="color:#dcc5ae;">price:</span> $98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
+            </div>
+          </div>
+          <?php
+          $run++;
+         }
+          ?>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+      <span class="text-black">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+      <span class="text-black">Next</span>
+    </button>
+  </div>
+    
 <div class="container-fluid w-100 mt-5" style="background:#dbbb9a;" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">
  <div class="container align-items-center d-flex flex-column justify-content-center">
   <h1 class="pt-5 fs-3 text-center">customer Testimonial</h1>
@@ -282,8 +291,7 @@ if(isset($_POST['sub'])){
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
 <script src="index.js"></script>
 </body>
 </html>
