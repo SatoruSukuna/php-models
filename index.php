@@ -135,7 +135,7 @@ if(isset($_POST['sub'])){
     </section>
     <div class="cloth mt-5">
         <div class="container-fluid">
-           <div class="d-flex gap-5 justify-content-around ">
+           <div class="d-flex flex-wrap gap-5 justify-content-around ">
            <?php
             $arryimg=["men.webp","women 4.jpg","baby.webp"];
             $arrywrite=["men Fashion","Women's Fashion","baby fashion"];
@@ -174,11 +174,11 @@ if(isset($_POST['sub'])){
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up"     data-aos-anchor-placement="top-bottom">
     <div class="carousel-inner mt-4">
       <div class="carousel-item active">
-        <div class="d-flex justify-content-center gap-5">
+        <div class="d-flex flex-wrap justify-content-center gap-5">
          <?php 
          $run=0;
          $imges=["latest.webp","latest1.webp","women 2.jpg","women 4.jpg","women 5.jpg","men.webp"];
-         while ($run<=4){
+         while ($run<=3){
          ?>
           <div class="card" style="width: 18rem;">
             <img src="imgset/<?php echo $imges[$run]?>" class="card-img-top" style="height: 100%; width: 100%;" alt="...">
@@ -195,11 +195,11 @@ if(isset($_POST['sub'])){
         </div>
       </div>
       <div class="carousel-item">
-        <div class="d-flex justify-content-center gap-5">
+        <div class="d-flex flex-wrap justify-content-center gap-5">
           <?php 
          $imges=["latest.webp","latest1.webp","women 2.jpg","women 4.jpg","women 5.jpg","men.webp"];
          $run=0;
-         while ($run<=4){
+         while ($run<=3){
          ?>
           <div class="card" style="width: 18rem;">
           <img src="imgset/<?php echo $imges[$run]?>" class="card-img-top" style="height: 100%; width: 100%;" alt="...">
