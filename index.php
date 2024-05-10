@@ -171,60 +171,6 @@ if(isset($_POST['sub'])){
       
     </div>
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up"     data-aos-anchor-placement="top-bottom">
-    <div class="carousel-inner mt-4">
-      <div class="carousel-item active">
-        <div class="d-flex flex-wrap justify-content-center gap-5">
-         <?php 
-         $run=0;
-         $imges=["latest.webp","latest1.webp","women 2.jpg","women 4.jpg","women 5.jpg","men.webp"];
-         while ($run<=3){
-         ?>
-          <div class="card" style="width: 18rem;">
-            <img src="imgset/<?php echo $imges[$run]?>" class="card-img-top" style="height: 100%; width: 100%;" alt="...">
-            <div class="card-body">
-            <h1 class="fs-6 fw-lighter text-center card-title">cashmere Tank + bag</h1>
-              <p class="fs-5 text-center fw-lighter fst-normal card-text"><span class="fs-6" style="color:#dcc5ae;">price:</span> $98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-            </div>
-          </div>
-          <?php
-          $run++;
-         }
-          ?>
-
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="d-flex flex-wrap justify-content-center gap-5">
-          <?php 
-         $imges=["latest.webp","latest1.webp","women 2.jpg","women 4.jpg","women 5.jpg","men.webp"];
-         $run=0;
-         while ($run<=3){
-         ?>
-          <div class="card" style="width: 18rem;">
-          <img src="imgset/<?php echo $imges[$run]?>" class="card-img-top" style="height: 100%; width: 100%;" alt="...">
-            <div class="card-body">
-              <h1 class="fs-6 fw-lighter text-center card-title">cashmere Tank + bag</h1>
-              <p class="fs-5 text-center fw-lighter fst-normal card-text"><span class="fs-6" style="color:#dcc5ae;">price:</span> $98  <span class="text-decoration-line-through fs-6 fw-lighter " style="color:#dbbb9a;">$500</span></p>
-            </div>
-          </div>
-          <?php
-          $run++;
-         }
-          ?>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-      <span class="text-black">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-      <span class="text-black">Next</span>
-    </button>
-  </div>
-    
 <div class="container-fluid w-100 mt-5" style="background:#dbbb9a;" data-aos="fade-up"  data-aos-anchor-placement="top-bottom">
  <div class="container align-items-center d-flex flex-column justify-content-center">
   <h1 class="pt-5 fs-3 text-center">customer Testimonial</h1>
@@ -244,13 +190,14 @@ if(isset($_POST['sub'])){
 
 
 <div class="container mt-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+  <h1 class="fw-bolder text-decoration-underline text-white  text-center">visit store</h1>
   <div class="row">
     <div class="col-md-6 col-lg-3">
       <div class="card">
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Gucci</h3>
           <img src="imgset/gucci.webp" style="height: 12rem;" alt="loading..." class="card-img-top">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">The Gucci store has received mixed reviews from customers. Some customers have reported positive experiences, such as good service from staff and high-quality products.</p>
           <a href="#" class="btn btn-primary">shop  now</a>
         </div>
       </div>
