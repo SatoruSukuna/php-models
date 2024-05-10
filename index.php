@@ -10,35 +10,34 @@ if(isset($_POST['sub'])){
         move_uploaded_file($tmp,"upload/".$profile);
     }
 
-    // setcookie($name,$num,time() + (86400*1));
+    setcookie($name,$num,time() + (86400*1));
 
 }
 ?>
 <?php
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// require "PHPMailer/src/Exception.php";
-// require "PHPMailer/src/SMTP.php";
-// require "PHPMailer/src/PHPMailer.php";
-// if(isset($_POST['sub'])){
-//   $mail=new PHPMailer(true);
-//   $mail->isSMTP();
-//   $mail->Host="smtp.gmail.com";
-//   $mail->SMTPAuth=true;
-//   $mail->Username="tarunsagwal38@gmail.com";
-//   $mail->Password="bxtlhhlnobtipkrd";
-//   $mail->SMTPSecure="ssl";
-//   $mail->Port=465;
-//   $mail->setFrom("tarunsagwal38@gmail.com");
-//   $mail->addAddress($_POST['email']);
-//   $mail->isHTML(true);
-//   $mail->Subject=$_POST['name'];
-  // $mail->Body="<h1> <?php echo $name  ?> 
-  <!-- thankyou to join a shoplift <br> I give you better experience </h1>"; -->
-  <!-- $mail->send(); -->
- <!-- } -->
-<!-- ?> -->
+require "PHPMailer/src/Exception.php";
+require "PHPMailer/src/SMTP.php";
+require "PHPMailer/src/PHPMailer.php";
+if(isset($_POST['sub'])){
+  $mail=new PHPMailer(true);
+  $mail->isSMTP();
+  $mail->Host="smtp.gmail.com";
+  $mail->SMTPAuth=true;
+  $mail->Username="tarunsagwal38@gmail.com";
+  $mail->Password="arsrjdwsxqxswpch";
+  $mail->SMTPSecure="ssl";
+  $mail->Port=465;
+  $mail->setFrom("tarunsagwal38@gmail.com");
+  $mail->addAddress($_POST['email']);
+  $mail->isHTML(true);
+  $mail->Subject=$_POST['name'];
+  $mail->Body="<h1> <?php echo $name  ?>  thankyou to join a shoplift <br> I give you better experience </h1>";
+   $mail->send();
+ }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -207,7 +206,7 @@ if(isset($_POST['sub'])){
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Chanel</h3>
           <img src="imgset/chanel.webp" style="height: 12rem;" alt="loading..." class="card-img-top">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"> Chanel has an overall rating of 4.0 out of 5, indicating a generally positive experience for customers. Many reviewers have reported a positive outlook for the business.</p>
           <a href="#" class="btn btn-primary">shop  now</a>
         </div>
       </div>
@@ -217,7 +216,7 @@ if(isset($_POST['sub'])){
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Louis Vuitton</h3>
           <img src="imgset/louis.webp" style="height: 12rem;" alt="loading..." class="card-img-top">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Awful customer service. UPS turned up at 8pm and refused to hand over my parcel because I don't have a driving license. I phoned LV and after accusing me of being.</p>
           <a href="#" class="btn btn-primary">shop  now</a>
         </div>
       </div>
@@ -227,7 +226,7 @@ if(isset($_POST['sub'])){
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Prada</h3>
           <img src="imgset/prada.webp" style="height: 12rem;" alt="loading..." class="card-img-top">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Prada is a premium brand offering a wide range of products, including bags, clothes, accessories, and more. According to reviews, the Prada outlet is a must-visit.</p>
           <a href="#" class="btn btn-primary">shop  now</a>
         </div>
       </div>
