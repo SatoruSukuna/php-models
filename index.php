@@ -59,7 +59,7 @@ if(isset($_POST['sub'])){
     <header class="container-fluid pt-2 pb-2">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bolder" href="#">shoplift</a>
+    <a class="navbar-brand fw-bolder fs-3 gap-2 d-flex align-items-center" href="#"><i class='bx bx-store' style='color:#fff; padding:.5rem .5rem; background:#f13e3e; border-radius:50%; font-size:2rem; ' ></i>shoplift</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -98,23 +98,23 @@ if(isset($_POST['sub'])){
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner" style="width:100vw; height: 90vh;">
+  <div class="carousel-inner">
     <div class="carousel-item active ">
-      <img src="imgset/fram.webp" class="d-block w-100" alt="..." style="height:90vh;">
+      <img src="imgset/fram.webp" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block text-black">
         <h5>women cloth</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/ads.jpg" class="d-block w-100" alt="..." style="height:90vh;">
+      <img src="img/ads.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block text-black">
         <h5>animation hindi</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="imgset/women 2.jpg" class="d-block w-100" alt="..." style="height:90vh;">
+      <img src="imgset/women 2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block text-black">
         <h5>baby cloth</h5>
         <p>Some representative placeholder content for the third slide.</p>
@@ -141,7 +141,7 @@ if(isset($_POST['sub'])){
               $run=0;
               while ($run<=2){
               ?>
-            <div class="imgcard " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="imgcard " data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <div class="boxs">
                 <img src="imgset/<?php echo $arryimg[$run] ?>" alt="img loading" srcset="">
               </div>
@@ -157,7 +157,7 @@ if(isset($_POST['sub'])){
            </div>
         </div>
     </div>
-    <div class="container-fluid mt-5" data-aos="fade-up"     data-aos-anchor-placement="top-bottom" >
+    <div class="container-fluid mt-5" data-aos="flip-up" >
       <div class="d-flex justify-content-around align-items-center card">
         <h1 class="text-black">Trending This Week</h1>
         <ul class="nav navbar fw-bold ">
@@ -188,11 +188,11 @@ if(isset($_POST['sub'])){
 </div>
 
 
-<div class="container mt-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-  <h1 class="fw-bolder text-decoration-underline text-white  text-center">visit store</h1>
-  <div class="row">
-    <div class="col-md-6 col-lg-3">
-      <div class="card">
+<div class="container mt-5" >
+  <h1 class="fw-bolder text-decoration-underline text-white  text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">visit store</h1>
+  <div class="row" >
+    <div class="col-md-6 col-lg-3" data-aos="flip-left">
+      <div class="card" >
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Gucci</h3>
           <img src="imgset/gucci.webp" style="height: 12rem;" alt="loading..." class="card-img-top">
@@ -201,8 +201,8 @@ if(isset($_POST['sub'])){
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card">
+    <div class="col-md-6 col-lg-3" data-aos="flip-right">
+      <div class="card" >
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Chanel</h3>
           <img src="imgset/chanel.webp" style="height: 12rem;" alt="loading..." class="card-img-top">
@@ -211,8 +211,8 @@ if(isset($_POST['sub'])){
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card">
+    <div class="col-md-6 col-lg-3" data-aos="flip-up">
+      <div class="card" >
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Louis Vuitton</h3>
           <img src="imgset/louis.webp" style="height: 12rem;" alt="loading..." class="card-img-top">
@@ -221,7 +221,7 @@ if(isset($_POST['sub'])){
         </div>
       </div>
     </div>
-    <div class="col-md-6 col-lg-3">
+    <div class="col-md-6 col-lg-3" data-aos="flip-down">
       <div class="card">
         <div class="card-body">
           <h3 class="fw-light card-title text-center">Prada</h3>
@@ -234,10 +234,18 @@ if(isset($_POST['sub'])){
   </div>
 </div>
 
-
-
+<div class="about_page container-fluid bg-dark mt-3">
+  <div class="d-flex align-items-center  justify-content-between">
+           <a class="navbar-brand text-white fw-bolder fs-3 gap-2 d-flex align-items-center" href="#"><i class='bx bx-store' style='color:#fff; padding:.5rem .5rem; background:#f13e3e; border-radius:50%; font-size:2rem; ' ></i>shoplift</a>
+     <div class="icon_center">
+       <a href="http://www.instagram.com/tarun.sagwal/"><i class='bx bxl-instagram' ></i><span class="hover_text hover_text_tsa fw-bold ">tarun.sagwal</span></a>
+       <a href="http://github.com/SatoruSukuna"><i class='bx bxl-github'></i><span class="hover_text hover_text_sa fw-bold ">SatoruSukuna</span></a>
+       <a href="#"><i class='bx bxl-linkedin'></i><span class="hover_text hover_text_ta fw-bold ">Tarun</span></a>
+       <a href="http://portfoliotarunsagwal.rf.gd"><i class='bx bxs-user-circle'></i><span class="hover_text hover_text_po fw-bold ">portfolio</span></a>
+     </div>
+  </div>
+</div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
