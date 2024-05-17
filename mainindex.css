@@ -16,10 +16,18 @@
 body{
     background-color: var(--main-backcolor);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
-/* header{
-    background-color: var(--main-header-color);
-} */
+
+body::-webkit-scrollbar{
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--main-font-hover-color);
+    border-radius: 1rem;
+}
+
 .cricle{
 background: var(--main-text-color);
 height: 2rem;
@@ -142,17 +150,15 @@ overflow: hidden;
         border-radius: 50%;
         background-color: transparent;
         transition: .5s;
-        padding: .3rem .3rem;
-
-
+        padding: .2rem .2rem;
       }
 
       .icon_center a:hover i{
-        transform: scale(1.3);
+        transform: scale(1.2);
         color: rgb(100, 100, 244);
         background-color: #fff;
         border-radius: 50%;
-        box-shadow: 2px 1px 15px #d5bdaf;
+        box-shadow: 2px 1px 5px #d5bdaf;
       }
 
       .icon_center a  .hover_text{

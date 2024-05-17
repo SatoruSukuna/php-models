@@ -27,7 +27,7 @@ if(isset($_POST['sub'])){
   $mail->Host="smtp.gmail.com";
   $mail->SMTPAuth=true;
   $mail->Username="tarunsagwal38@gmail.com";
-  $mail->Password="arsrjdwsxqxswpch";
+  $mail->Password="fyticmsnqjkjtxot";
   $mail->SMTPSecure="ssl";
   $mail->Port=465;
   $mail->setFrom("tarunsagwal38@gmail.com");
