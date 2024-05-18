@@ -38,6 +38,13 @@ if(isset($_POST['sub'])){
    $mail->send();
  }
 ?>
+<?php
+    $con = mysqli_connect('localhost','root','','study');
+    if(isset($_POST['sub'])){
+        $user = $_POST['email'];
+        $query = mysqli_query($con,"insert into shoplift (name) values ('$user')");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
