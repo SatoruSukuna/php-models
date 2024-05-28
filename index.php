@@ -10,7 +10,7 @@ if(isset($_POST['sub'])){
         move_uploaded_file($tmp,"upload/".$profile);
     }
 
-    setcookie($name,$num,time() + (86400*1));
+    // setcookie($name,$num,time() + (86400*1));
 
 }
 ?>
@@ -42,7 +42,13 @@ if(isset($_POST['sub'])){
     $con = mysqli_connect('localhost','root','','study');
     if(isset($_POST['sub'])){
         $user = $_POST['email'];
-        $query = mysqli_query($con,"insert into shoplift (name) values ('$user')");
+        $query = mysqli_query($con,"insert into shoplift (email) values ('$user')");
+        // if($query){
+        //   echo "inserted";
+        // }
+        // else{
+        //   echo "not inserted";
+        // }
     }
 ?>
 <!DOCTYPE html>
@@ -167,7 +173,7 @@ if(isset($_POST['sub'])){
     <div class="container-fluid mt-5" data-aos="flip-up" >
       <div class="d-flex justify-content-around align-items-center card">
         <h1 class="text-black">Trending This Week</h1>
-        <ul class="nav navbar fw-bold ">
+        <ul class="nav navbar fw-bold flex-nowrap ">
           <li class="shop_red nav-item"><a href="#" class="text-black nav-link">men</a></li>
           <li class="shop_red nav-item"><a href="#" class="text-black nav-link">women</a></li>
           <li class="shop_red nav-item"><a href="#" class="text-black nav-link">baby</a></li>
