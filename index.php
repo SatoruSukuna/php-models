@@ -62,6 +62,7 @@ if(isset($_POST['sub'])){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="mainindex.css">
+    <link rel="icon" href="img/store-solid-24.png">
 </head>
 <body class="fst-italic">
   <div class="load" onload="load()">
@@ -69,8 +70,14 @@ if(isset($_POST['sub'])){
         </div>
         <i class='bx bx-store' style='color:#f13e3e' ></i>
   </div>
-    <header class="container-fluid pt-2 pb-2">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="profile_bar">
+    <div class="profile_box"></div>
+  </div>
+
+
+    <header class="container-fluid pt-2 pb-2 position-relative">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 position-fixed">
   <div class="container-fluid">
     <a class="navbar-brand fw-bolder fs-3 gap-2 d-flex align-items-center" href="#"><i class='bx bx-store' style='color:#fff; padding:.5rem .5rem; background:#f13e3e; border-radius:50%; font-size:2rem; ' ></i>shoplift</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,14 +103,16 @@ if(isset($_POST['sub'])){
       <div class="d-flex gap-1">
      <h4 class="text-black fw-light">hi,<?php echo $name ?></h4>
           <div class="cricle">
-    <img src="upload/<?php echo $profile ?>" alt="" srcset="">
+    <img onclick="profile()" src="upload/<?php echo $profile ?>" alt="" srcset="">
           </div>
        </div>
     </div>
   </div>
 </nav>
     </header>
-    <section>
+
+
+    <section class="section">
       <div class="main">
        <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">

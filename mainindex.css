@@ -28,6 +28,24 @@ body::-webkit-scrollbar-thumb{
     border-radius: 1rem;
 }
 
+.ul_item{
+    margin: 0% !important;
+}
+header{
+    z-index: 1030 !important;
+}
+nav{
+    top: 0% !important;
+    left: 0% !important;
+}
+.section{
+    margin-top: 5rem !important;
+}
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+
 .cricle{
 background: var(--main-text-color);
 height: 2rem;
@@ -138,6 +156,38 @@ overflow: hidden;
       }
 
 
+      .profile_bar{
+        height: 0dvh;
+        width: 17rem;
+        /* border-radius: 25px; */
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 25px;
+        overflow: hidden;
+        background-color: #dad2d2e2;
+        position: fixed;
+        right: 0%;
+        /* transform: translateX(-5rem); */
+        transition: .8s all;
+        top: 10%;
+        z-index: 20;
+    }
+    .profile_bars{
+        /* transform: translateX(-5rem); */
+        height: 80.1dvh;
+        width: 17rem;
+        /* border-radius: 25px; */
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 25px;
+        overflow: hidden;
+        background-color: #dad2d2e2;
+        position: fixed;
+        right: 0%;
+        /* transform: translateX(18rem); */
+        transition: .8s all;
+        top: 10%;
+        z-index: 20;
+      }
+
     @media (max-width: 768px) {
         .carousel-inner img {
           height: 236px;
@@ -188,6 +238,6 @@ overflow: hidden;
 
       .icon_center a:hover .hover_text_po{
         display: block;
-    transform: translate(100px ,-58px) ;
+    transform: translate(87px ,-58px) ;
   }
       
