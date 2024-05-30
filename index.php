@@ -65,14 +65,43 @@ if(isset($_POST['sub'])){
     <link rel="icon" href="img/store-solid-24.png">
 </head>
 <body class="fst-italic">
+<i class='bx bx-menu' onclick="profile()" ></i>
   <div class="load" onload="load()">
       <div class="loading">
         </div>
         <i class='bx bx-store' style='color:#f13e3e' ></i>
   </div>
 
-  <div class="profile_bar">
-    <div class="profile_box"></div>
+
+  <div class="profile_bar bg-light fst-normal">
+    <div class="profile_box">
+      <div class="profile_top bg-dark gap-2  p-2 d-flex align-items-center">
+        <div class="cricle cricle_profile">
+          <img onclick="profile()" src="upload/<?php echo $profile ?>" alt="" srcset="">
+        </div>
+        <h4 class="text-white fw-bold fs-5"><?php echo $name ?></h4>
+      </div>
+      <div class="content_profile d-flex flex-column ">
+      <h1 class="fs-4 p-1">shop by department</h1>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">electronics</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">computers</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">smart home</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">arts & crafts</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light gap-1 align-items-center p-2"><span class="product_item">see all</span><span class="fw-bolder fs-2 " ><i class='bx bx-chevron-down'></i></span></h3>
+      </div>
+      <div class="line"></div>
+      <div class="content_profile d-flex flex-column ">
+      <h1 class="fs-4 p-1">programs & features</h1>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">gift cards</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">shop by interest</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">shoplift live</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light justify-content-between align-items-center p-2"><span class="product_item">international shopping</span><span class="fw-bolder fs-2" ><i class='bx bx-chevron-right'></i></span></h3>
+      <h3 class="d-flex shop_listing fs-5 fw-light gap-1 align-items-center p-2"><span class="product_item">see all</span><span class="fw-bolder fs-2 " ><i class='bx bx-chevron-down'></i></span></h3>
+    </div>
+      <div class="line"></div>
+      <h1 class="fs-5 fw-light">favorate</h1>
+      </div>
+    </div>
   </div>
 
 
@@ -100,10 +129,10 @@ if(isset($_POST['sub'])){
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
-      <div class="d-flex gap-1">
+      <div class="nav_profile  d-flex gap-1">
      <h4 class="text-black fw-light">hi,<?php echo $name ?></h4>
           <div class="cricle">
-    <img onclick="profile()" src="upload/<?php echo $profile ?>" alt="" srcset="">
+    <img  src="upload/<?php echo $profile ?>" alt="" srcset="">
           </div>
        </div>
     </div>
